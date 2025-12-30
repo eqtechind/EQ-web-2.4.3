@@ -6,7 +6,7 @@ import { toast } from "sonner";
 
 <Image
   src="https://cdn.prod.website-files.com/6953d4697b778fe505448f7e/6953d48e603683439ecd9ef4_pagelogo.png"
-  alt="Page Logo"
+  alt="Eqvisor_logo"
   width={200}
   height={60}
 />
