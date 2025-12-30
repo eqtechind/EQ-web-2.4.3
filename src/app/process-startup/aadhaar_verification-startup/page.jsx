@@ -4,10 +4,8 @@ import { useRouter } from "next/navigation";
 import React, { useState, useEffect } from "react";
 import { toast } from "sonner";
 
-<img
-  const Eqvisor_logo ="https://cdn.prod.website-files.com/6953d4697b778fe505448f7e/6953d48e603683439ecd9ef4_pagelogo.png"
-  alt="Page Logo"
-/>
+const Eqvisor_logo ="https://cdn.prod.website-files.com/6953d4697b778fe505448f7e/6953d48e603683439ecd9ef4_pagelogo.png"
+
 
 const Page = () => {
   const [captcha, setCaptcha] = useState("");

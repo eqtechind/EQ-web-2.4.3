@@ -6,10 +6,9 @@ import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, AlertCircle, Loader2 } from "lucide-react";
 
-<img
-  const Eqvisor_logo ="https://cdn.prod.website-files.com/6953d4697b778fe505448f7e/6953d48e603683439ecd9ef4_pagelogo.png"
-  alt="Page Logo"
-/>
+
+const Eqvisor_logo ="https://cdn.prod.website-files.com/6953d4697b778fe505448f7e/6953d48e603683439ecd9ef4_pagelogo.png"
+
 
 const Page = () => {
   const [captcha, setCaptcha] = useState("");
