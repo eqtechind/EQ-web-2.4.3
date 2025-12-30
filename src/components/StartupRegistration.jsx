@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from "react";
 import { toast } from "@/hooks/use-toast";
-import ProgressSteps from "./ProgressSteps";
+//import ProgressSteps from "./ProgressSteps";
 import PersonalDetailsForm from "./forms/PersonalDetailsForm";
 import PersonalVerificationForm from "./forms/PersonalVerificationForm";
 import StartupDetailsForm from "./forms/StartupDetailsForm";
