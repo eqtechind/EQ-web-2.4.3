@@ -1,5 +1,5 @@
 "use client";
-import Eqvisor_logo from "@/components/Eqvisor_logo";
+import Eqvisor_logo from "https://media.licdn.com/dms/image/v2/D560BAQEtp8LUQovjLw/company-logo_200_200/B56ZYbwvUfHoAc-/0/1744222484219/eqvisor_logo?e=2147483647&v=beta&t=k2MuNSdz_89hfC0Lpg400VwMXHlWalo_lcTu1s5yOrA";
 import { useRouter } from "next/navigation";
 import React, { useState, useEffect } from "react";
 import { toast } from "sonner";
