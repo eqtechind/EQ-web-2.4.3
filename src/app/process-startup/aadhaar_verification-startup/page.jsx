@@ -74,7 +74,7 @@ const Page = () => {
   return (
     <div className="w-full h-[100vh] px-[10vh] py-[15vh]">
       <div>
-        <Eqvisor_logo className={"w-[auto] h-[4vh]"} />
+        
         <p className="py-[4vh]">
           Completing further process will link your DigiLocker account with
           EQvisor application. Kindly make sure your DigiLocker account exists.
