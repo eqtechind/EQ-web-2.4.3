@@ -21,7 +21,7 @@ const StartupRegistration = () => {
   const [formData, setFormData] = useState({});
   const [completedSteps, setCompletedSteps] = useState([]);
 
-  const progressSteps = steps.map((step, index) => ({
+  const ProgressSteps = steps.map((step, index) => ({
     ...step,
     completed: completedSteps.includes(index),
     active: currentStep === index,
