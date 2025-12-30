@@ -9,10 +9,19 @@ const nextConfig = {
         {
           protocol:"https",
           hostname:"framer.com"
-        }
+        },
+        {
+        protocol: "https",
+        hostname: "cdn.prod.website-files.com",
+      },
       ],
+      
     },
   };
+
   
-  export default nextConfig;
+
+export default nextConfig;
+  
+
   

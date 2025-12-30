@@ -1,5 +1,5 @@
 "use client";
-//import Eqvisor_logo from "https://cdn.prod.website-files.com/6953d4697b778fe505448f7e/6953d48e603683439ecd9ef4_pagelogo.png";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React, { useState, useEffect } from "react";
 import { toast } from "sonner";
@@ -7,9 +7,11 @@ import { Button } from "@/components/ui/button";
 import { CheckCircle, AlertCircle, Loader2 } from "lucide-react";
 
 
-<img
+<Image
   src="https://cdn.prod.website-files.com/6953d4697b778fe505448f7e/6953d48e603683439ecd9ef4_pagelogo.png"
-  alt= "Eqvisor_logo"
+  alt="Page Logo"
+  width={200}
+  height={60}
 />
 
 const Page = () => {
