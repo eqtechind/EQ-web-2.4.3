@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from "react";
-//import Input from "@/components/Input";
+
 import StepComponent from "@/components/StepComponent";
-//import Link from "next/link";
+
 import { toast } from "sonner";
 import { useRouter } from "next/navigation";
 
