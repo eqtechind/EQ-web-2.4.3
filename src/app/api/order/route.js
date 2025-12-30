@@ -3,8 +3,8 @@ import { NextRequest, NextResponse } from 'next/server';
 
 // Initialize Razorpay
 const razorpay = new Razorpay({
-  key_id: process.env.key_id,      // Ensure this is defined in .env
-  key_secret: process.env.key_secret,
+  key_id: RAZORPAY_KEY_ID,      // Ensure this is defined in .env
+  key_secret: RAZORPAY_KEY_SECRET,
 });
 
 export async function POST(request) {
