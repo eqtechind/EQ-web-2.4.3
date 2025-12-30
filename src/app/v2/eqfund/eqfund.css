@@ -1,0 +1,411 @@
+/* eqfund.css */
+/* Color system: blue (primary), green (accent), white, near-black text, light gray border */
+:root {
+    --blue: #4f7df3;
+    --green: #16a34a;
+    --bg: #ffffff;
+    --text: #111827;
+    --border: #e5e7eb;
+    --light-blue: #e0e7ff;
+}
+
+.eqfund {
+    color: var(--text);
+    background: var(--bg);
+    min-height: 100vh;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 0;
+    gap: 0;
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
+        Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    align-items: center;
+}
+
+/* Header */
+.eqfund-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 20px 40px;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg);
+    position: relative;
+    width: 100%;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.eqfund-header .brand {
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    font-size: 18px;
+}
+
+.eqfund-header .product {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.nav {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    position: relative;
+}
+
+.nav a {
+    color: rgba(17, 24, 39, 0.7);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 0;
+    transition: color 0.2s;
+    position: relative;
+}
+
+.nav a:hover {
+    color: var(--text);
+}
+
+.nav a.active {
+    color: var(--blue);
+    font-weight: 600;
+}
+
+.nav-underline {
+    height: 2px;
+    width: 100%;
+    background: var(--blue);
+    margin: 0;
+    position: relative;
+}
+
+.nav-underline::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: var(--blue);
+    clip-path: polygon(0 0, 25% 0, 35% 0, 100% 0);
+}
+
+/* Layout */
+.eqfund-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* gap: 10px; */
+    padding: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    justify-self: center;
+    justify-content: center;
+}
+
+.panel {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-right: 0px auto;
+    max-width: 90%;
+}
+
+.second-box {
+
+    margin-right: 180px;
+}
+
+.panel-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.panel-title::after {
+    content: "";
+    height: 1px;
+    background: var(--border);
+    flex: 1 1 auto;
+}
+
+.panel-title.small {
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+/* Round cards */
+.round-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 12px;
+}
+
+.round-card {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--bg);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.2s;
+}
+
+.round-card:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.round-card.active {
+    background-color: #89ADFF;
+    color: var(--text);
+    border-color: var(--blue);
+    box-shadow: 0 2px 8px rgba(79, 125, 243, 0.15);
+}
+
+.avatar-square {
+    width: 82px;
+    height: 82px;
+    border-radius: 8px;
+    background: #f3f4f6;
+    border: 1px solid var(--border);
+}
+
+.round-card.active .avatar-square {
+    background: #fff;
+    border-color: var(--blue);
+}
+
+.round-meta {
+    display: grid;
+    gap: 4px;
+}
+
+.round-name {
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    font-size: 16px;
+}
+
+.round-sub {
+    font-size: 13px;
+    color: rgba(17, 24, 39, 0.7);
+    line-height: 1.4;
+}
+
+.round-card.active .round-sub,
+.round-card.active .round-name {
+    color: var(--text);
+}
+
+.label {
+    font-weight: 500;
+}
+
+.label.green,
+.green {
+    color: var(--green);
+    font-weight: 600;
+}
+
+.blue-highlight {
+    color: var(--blue);
+    font-weight: 600;
+}
+
+.icon-btn {
+    background: transparent;
+    border: 0;
+    color: rgba(17, 24, 39, 0.6);
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.icon-btn:hover {
+    background: rgba(17, 24, 39, 0.05);
+    color: rgba(17, 24, 39, 0.8);
+}
+
+.round-card.active .icon-btn {
+    color: var(--text);
+}
+
+.round-card.active .icon-btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* Progress & investors */
+.progress {
+    display: grid;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.progress-track {
+    width: 100%;
+    height: 20px;
+    border-radius: 999px;
+    background: #f3f4f6;
+    overflow: hidden;
+    border: 1px solid var(--border);
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--blue);
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+.funds-label {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.investors {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    background: #fafafa;
+}
+
+.investors-header {
+    font-weight: 600;
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: var(--text);
+}
+
+.investor-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 12px;
+}
+
+.investor-card {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--bg);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.2s;
+}
+
+.investor-card:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text);
+    background: #f3f4f6;
+    border: 1px solid var(--border);
+}
+
+.investor-meta {
+    display: grid;
+    gap: 4px;
+}
+
+.investor-name {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.investor-sub {
+    font-size: 12px;
+    color: rgba(17, 24, 39, 0.7);
+    line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .eqfund-main {
+        padding: 30px 20px;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 960px) {
+    .nav {
+        display: none;
+    }
+
+    .eqfund-main {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 20px;
+    }
+
+    .panel {
+        padding: 20px;
+    }
+
+    .eqfund-header {
+        padding: 16px 20px;
+    }
+
+    .header-left {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .eqfund-main {
+        padding: 16px;
+        gap: 20px;
+    }
+
+    .panel {
+        padding: 16px;
+    }
+
+    .round-card,
+    .investor-card {
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .eqfund-header {
+        padding: 12px 16px;
+    }
+
+    .header-left {
+        gap: 16px;
+    }
+}

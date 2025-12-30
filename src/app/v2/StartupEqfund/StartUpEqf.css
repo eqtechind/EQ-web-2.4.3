@@ -1,0 +1,388 @@
+/* Color system: 4 colors total to meet guidelines
+   --eqf-blue (primary), --eqf-white, --eqf-gray-50, --eqf-text
+*/
+:root {
+    --eqf-blue: #2d6cdf;
+    --eqf-white: #ffffff;
+    --eqf-gray-50: #f3f6fb;
+    --eqf-gray-300: #cbd5e1;
+    /* neutral border */
+    --eqf-text: #0f172a;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.eqf-page {
+    color: var(--eqf-text);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
+        Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    background: var(--eqf-white);
+}
+
+/* Header */
+.eqf-header {
+    position: sticky;
+    top: 0;
+    margin-left: 100px;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 24px 8px;
+    background: var(--eqf-white);
+}
+
+.eqf-brand {
+    font-weight: 700;
+    /* margin-left: 50px; */
+    letter-spacing: 0.2px;
+}
+
+.eqf-nav {
+    display: flex;
+    align-items: center;
+    /* margin-left: 100px; */
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.eqf-link {
+    color: #475569;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.eqf-link:hover {
+    color: var(--eqf-blue);
+}
+
+.eqf-link-active {
+    color: var(--eqf-blue);
+}
+
+/* Progress bar under nav */
+.eqf-nav-progress-inline {
+    height: 8px;
+    background: #2c64f1;
+    border-radius: 6px;
+    width: 520px;
+    justify-self: start;
+    margin-left: 30px;
+}
+
+/* old bar remains for backward compatibility but hidden */
+.eqf-nav-progress {
+    display: none;
+}
+
+.eqf-progress-bar {
+    height: 3px;
+    width: 70%;
+    background: transparent;
+}
+
+/* Main */
+.eqf-main {
+    max-width: 1200px;
+    /* margin:0px 100px 0px 100px;  */
+
+    width: 80%;
+    /* margin: 0 auto; */
+    padding: 24px;
+    margin-left: 100px;
+}
+
+/* Intro */
+.eqf-intro {
+    margin: 12px 0 20px;
+    font-weight: 600;
+    /* text-align: center; */
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.eqf-title {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.2;
+
+    margin: 0 0 6px;
+}
+
+.eqf-subtitle {
+    color: #475569;
+    margin: 0;
+}
+
+/* Grid Layout */
+.eqf-grid {
+    display: grid;
+    gap: 20px;
+    align-items: stretch;
+}
+
+@media (min-width: 992px) {
+    .eqf-grid {
+        grid-template-columns: 280px 1fr 280px;
+        align-items: start;
+        column-gap: 24px;
+    }
+}
+
+/* Card */
+.eqf-card {
+    background: var(--eqf-white);
+    border-radius: 14px;
+    border: 1px solid var(--eqf-gray-300);
+    box-shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
+    padding: 16px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Side panels */
+.eqf-side {
+    background: var(--eqf-white);
+    padding: 16px 16px 18px;
+    box-shadow: 0 12px 32px rgba(15, 23, 42, 0.12);
+}
+
+.eqf-card-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 6px 0 12px;
+}
+
+/* Textarea */
+.eqf-textarea {
+    width: 100%;
+    min-height: 340px;
+    resize: vertical;
+    border: 1px solid var(--eqf-gray-300);
+    background: var(--eqf-gray-50);
+    border-radius: 12px;
+    padding: 12px;
+    line-height: 1.55;
+    color: var(--eqf-text);
+}
+
+.eqf-textarea:focus {
+    outline: 2px solid var(--eqf-blue);
+    outline-offset: 2px;
+}
+
+/* Buttons */
+.eqf-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0 16px;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    font-weight: 600;
+    transition: filter 120ms ease, transform 120ms ease;
+}
+
+.eqf-btn:focus-visible {
+    outline: 2px solid var(--eqf-blue);
+    outline-offset: 2px;
+}
+
+.eqf-btn-primary {
+    background: var(--eqf-blue);
+    width: 250px;
+    color: var(--eqf-white);
+    box-shadow: 0 6px 16px rgba(45, 108, 223, 0.3);
+}
+
+.eqf-btn-primary:hover {
+    filter: brightness(1.05);
+}
+
+.eqf-btn:active {
+    transform: translateY(1px);
+}
+
+.eqf-btn-block {
+    display: block;
+    width: 100%;
+    margin-top: 12px;
+}
+
+/* Preview card specifics */
+.eqf-preview {
+    padding: 0;
+    overflow: hidden;
+    max-width: 1020px;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.eqf-startup-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 16px 8px;
+    background: #ffffff;
+    border-bottom: 1px solid var(--eqf-gray-300);
+    position: relative;
+    z-index: 1;
+}
+
+.eqf-avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 999px;
+    background: var(--eqf-blue);
+    color: var(--eqf-white);
+    font-weight: 700;
+    display: grid;
+    place-items: center;
+    font-size: 14px;
+}
+
+.eqf-company {
+    display: flex;
+    flex-direction: column;
+}
+
+.eqf-company-name {
+    font-weight: 700;
+}
+
+.eqf-company-tagline {
+    color: #64748b;
+    font-size: 12px;
+}
+
+.eqf-cover {
+    width: 100%;
+    background: var(--eqf-gray-50);
+}
+
+.eqf-cover img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.eqf-desc-cta {
+    margin-top: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 16px 16px;
+}
+
+.eqf-desc {
+    margin: 0;
+    color: #334155;
+    line-height: 1.55;
+}
+
+@media (max-width: 640px) {
+    .eqf-desc-cta {
+        flex-direction: column;
+    }
+
+    .eqf-btn {
+        width: 100%;
+    }
+}
+
+.eqf-funding {
+    max-width: 550px;
+    margin: 28px auto 60px;
+}
+
+.eqf-funding-title {
+    margin: 0 10px 6px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.eqf-funding-title.small {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.eqf-funding-sub {
+    margin: 0 0 16px;
+    color: #475569;
+    font-size: 14px;
+}
+
+.eqf-funding-sub.small {
+    margin: 0 0 18px;
+}
+
+.eqf-funding-card {
+    background: #fff;
+    border: 1px solid var(--eqf-gray-300);
+    border-radius: 14px;
+    box-shadow: 0 18px 30px rgba(15, 23, 42, 0.08);
+    padding: 18px 20px 22px;
+}
+
+.eqf-field-label {
+    display: block;
+    margin: 12px 0 8px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.eqf-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid var(--eqf-gray-300);
+    border-radius: 10px;
+    padding: 0 12px;
+    background: var(--eqf-gray-50);
+}
+
+.eqf-sep {
+    height: 4px;
+    width: 60%;
+    background: #2c64f1;
+    margin: 18px auto 12px;
+    border-radius: 999px;
+}
+
+.eqf-funding-actions {
+    margin-top: 28px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.eqf-action-buttons {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 16px;
+    justify-content: start;
+}
+
+.eqf-btn-ghost {
+    background: #fff;
+    color: var(--eqf-text);
+    font-size: 13px;
+    width: 250px;
+    border: 1px solid var(--eqf-gray-300);
+}
+
+/* Ensure every main card has a clear shadow */
+.eqf-card,
+.eqf-funding-card {
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.12);
+}

@@ -1,0 +1,32 @@
+.footer-container{
+    background-color: black;
+    color: white;
+    font-family: inter;
+    padding: 10vh 30vh;
+
+}
+.footer-section{
+    padding: 4vh 0;
+    border-top: 1px solid #777777;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-section h1{
+    width: 70%;
+    font-size: 4rem;
+    
+    font-weight: 700;
+}
+.footer-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+}
+.footer-menu ul{
+    font-size: 12px;
+}
+.footer-menu ul li:first-child{
+    font-size: 14px;
+}

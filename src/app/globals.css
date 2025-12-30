@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 0 0% 3.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 3.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 3.9%;
+  --primary: 214 100% 60%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 210 40% 96.1%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 214 100% 60%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 214 100% 60%;
+  --radius: 0.5rem;
+
+  /* Custom design tokens for startup registration */
+  --gradient-primary: linear-gradient(135deg, hsl(214 100% 60%), hsl(220 100% 55%));
+  --gradient-background: linear-gradient(135deg, hsl(214 100% 60%), hsl(220 100% 50%));
+  --form-background: 0 0% 100%;
+  --step-active: 214 100% 60%;
+  --step-completed: 142 76% 36%;
+  --step-inactive: 215.4 16.3% 46.9%;
+}
+
+.dark {
+  --background: 222.2 84% 4.9%;
+  --foreground: 210 40% 98%;
+  --card: 222.2 84% 4.9%;
+  --card-foreground: 210 40% 98%;
+  --popover: 222.2 84% 4.9%;
+  --popover-foreground: 210 40% 98%;
+  --primary: 210 40% 98%;
+  --primary-foreground: 222.2 47.4% 11.2%;
+  --secondary: 217.2 32.6% 17.5%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+  --accent: 217.2 32.6% 17.5%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 217.2 32.6% 17.5%;
+  --input: 217.2 32.6% 17.5%;
+  --ring: 212.7 26.8% 83.9%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .bg-gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .bg-gradient-background {
+    background: var(--gradient-background);
+  }
+  
+  .bg-step-completed {
+    background-color: hsl(var(--step-completed));
+  }
+  
+  .bg-step-active {
+    background-color: hsl(var(--step-active));
+  }
+  
+  .text-primary {
+    color: hsl(var(--primary));
+  }
+  
+  .bg-primary {
+    background-color: hsl(var(--primary));
+  }
+  
+  .hover\:bg-primary\/90:hover {
+    background-color: hsl(var(--primary) / 0.9);
+  }
+  
+  .hover\:bg-primary\/10:hover {
+    background-color: hsl(var(--primary) / 0.1);
+  }
+  
+  .border-primary {
+    border-color: hsl(var(--primary));
+  }
+  
+  .text-primary {
+    color: hsl(var(--primary));
+  }
+}
+
+/* Custom utility classes for the startup registration forms */
+.glass-effect {
+  background: rgba(15, 2, 2, 0.21);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.7px);
+  -webkit-backdrop-filter: blur(1.7px);
+  border: 1px solid rgba(15, 2, 2, 0.04);
+}
+
+.inner-shadow {
+  -webkit-box-shadow: inset 4px 11px 22px -7px rgba(0,0,0,0.69);
+  -moz-box-shadow: inset 4px 11px 22px -7px rgba(0,0,0,0.69);
+  box-shadow: inset 4px 11px 22px -7px rgba(0,0,0,0.69);
+}
+
+.login-shadow {
+  box-shadow: 4px 4px 27.7px -6px rgba(0, 0, 0, 0.25);
+}

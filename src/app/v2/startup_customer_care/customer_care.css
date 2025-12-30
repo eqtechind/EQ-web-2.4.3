@@ -1,0 +1,218 @@
+:root {
+    --bg: #ffffff;
+    --text: #0f0f0f;
+    --muted: #f3f4f6;
+    /* light grey cards */
+    --border: #e5e7eb;
+    --accent: #2563eb;
+    /* blue for Customer Care link */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.help-page {
+    background: var(--bg);
+    color: var(--text);
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica,
+        Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    line-height: 1.5;
+    width: 100vw;
+    /* padding-right: 200px; */
+}
+
+/* Layout helpers */
+.container {
+    width: min(1100px, 80%);
+    margin: 0 auto;
+}
+
+/* Header */
+.help-header {
+    position: sticky;
+    top: 0;
+    background: var(--bg);
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0;
+}
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 600;
+}
+
+.brand-mark {
+    color: var(--accent);
+    font-size: 14px;
+    line-height: 1;
+}
+
+.brand-text {
+    font-size: 16px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list a {
+    color: #111;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.nav-list a:hover,
+.nav-list a:focus-visible {
+    text-decoration: underline;
+    outline: none;
+}
+
+.nav-accent {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+/* Cards */
+.card {
+    background-color: #F2F2F2;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+/* Hero */
+.hero-card {
+    margin-top: 20px;
+    padding: clamp(40px, 6vw, 60px) clamp(20px, 4vw, 40px);
+    text-align: center;
+}
+
+.hero-title {
+    margin: 0;
+    font-weight: 610;
+    letter-spacing: -0.02em;
+    font-size: 100px;
+    line-height: 0.9;
+}
+
+.hero-emphasis {
+    font-weight: 900;
+    font-size: 1.15em;
+}
+
+/* Contact row */
+.contact-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 18px 0 24px;
+}
+
+.contact-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text);
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px 8px;
+    border-radius: 8px;
+    transition: background-color 0.15s ease, transform 0.06s ease;
+}
+
+.contact-item:hover,
+.contact-item:focus-visible {
+    background: #fafafa;
+    outline: none;
+}
+
+.contact-item:active {
+    transform: translateY(1px);
+}
+
+.icon {
+    width: 18px;
+    height: 18px;
+    color: #111;
+    flex: 0 0 18px;
+}
+
+/* Company card */
+.company-card {
+    padding: clamp(18px, 4vw, 36px);
+    margin-bottom: 40px;
+}
+
+.company-title {
+    margin: 6px 70px 20px;
+    /* font-size: clamp(26px, 5.2vw, 44px); */
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.company-sub {
+    font-weight: 700;
+    display: inline-block;
+    font-size: 60px;
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    margin: 100px 70px 20px;
+}
+
+.link-col {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link-col li+li {
+    margin-top: 8px;
+}
+
+.link-col a {
+    color: #222;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.link-col a:hover,
+.link-col a:focus-visible {
+    text-decoration: underline;
+    outline: none;
+}
+
+/* Responsive tweaks */
+@media (max-width: 520px) {
+    .nav-list {
+        gap: 10px;
+    }
+
+    .contact-row {
+        grid-template-columns: 1fr;
+    }
+}

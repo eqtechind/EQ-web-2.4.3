@@ -1,0 +1,99 @@
+/* Hide cursor inside the entire navbar */
+.hide-cursor {
+  cursor: none;
+}
+
+/* Popup styling */
+.login-container {
+  position: relative;
+}
+
+.login-popup {
+  position: absolute;
+  top: 110%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  min-width: 120px;
+  padding: 0.5rem 0;
+}
+
+.popup-option {
+  display: block;
+  padding: 10px 16px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.2s ease;
+}
+
+.popup-option:hover {
+  background-color: #f0f0f0;
+}
+
+.service-navbar-container {
+  width: 100%;
+  font-family: inter;
+  height: 10vh;
+  background-color: black;
+  color: white;
+}
+.service-navbar-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+.menu {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.service-menu-items {
+  font-size: 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.service-menu-item {
+  color: grey;
+  /* margin: 0 2vh; */
+}
+.service-active {
+  color: #a5ff8a;
+}
+
+.service-login-btn {
+  background-color: #a5ff8a;
+  border-radius: 5px;
+  flex: none;
+  height: 30px;
+  cursor: none;
+  overflow: hidden;
+  position: relative;
+  color: black;
+  font-size: 14px;
+  width: 120px;
+  will-change: var(--framer-will-change-override, transform);
+}
+
+.service-menu-item a {
+  cursor: none;
+}

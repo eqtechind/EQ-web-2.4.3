@@ -1,0 +1,30 @@
+.stat-container{
+    width: 100%;
+    background-color: #a5ff8a;
+    padding: 4vh;
+    display: grid;
+    place-items: center;
+}
+.stat-container .stat-section{
+display: flex;
+align-items: center;
+width: 60%;
+justify-content: space-around;
+}
+.stat-card{
+display: flex;
+flex-direction: column;
+}
+.stat-card div{
+    font-size: 6rem;
+    font-family: inter;
+    font-weight: 700;
+}
+.stat-card p{
+    color: #1F6DFF;
+    font-size: 2.5rem;
+    position: relative;
+    top: -2vh;
+    font-family: inter;
+    font-weight: 500;
+}
