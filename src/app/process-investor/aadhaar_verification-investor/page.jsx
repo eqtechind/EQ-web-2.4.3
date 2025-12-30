@@ -181,7 +181,7 @@ const Page = () => {
   return (
     <div className="w-full h-[100vh] px-[10vh] py-[15vh]">
       <div>
-        <Eqvisor_logo className={"w-[auto] h-[4vh]"} />
+   
         
         {/* API Status Indicator */}
         <div className="mb-4 flex items-center justify-center gap-2">
