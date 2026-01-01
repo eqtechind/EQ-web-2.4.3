@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from "react";
 import { toast } from "@/hooks/use-toast";
-//import ProgressSteps from "./ProgressSteps";
+import ProgressSteps from "./ui/ProgressSteps";
 import PersonalDetailsForm from "./forms/PersonalDetailsForm";
 import PersonalVerificationForm from "./forms/PersonalVerificationForm";
 import StartupDetailsForm from "./forms/StartupDetailsForm";
@@ -21,7 +21,7 @@ const StartupRegistration = () => {
   const [formData, setFormData] = useState({});
   const [completedSteps, setCompletedSteps] = useState([]);
 
-  const ProgressSteps = steps.map((step, index) => ({
+  const progressSteps = steps.map((step, index) => ({
     ...step,
     completed: completedSteps.includes(index),
     active: currentStep === index,
