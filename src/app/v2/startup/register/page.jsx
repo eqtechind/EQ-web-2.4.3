@@ -1,7 +1,5 @@
 import StartupRegistration from "@/components/StartupRegistration";
 
-const Index = () => {
+export default function Page() {
   return <StartupRegistration />;
-};
-
-export default Index;
+}
