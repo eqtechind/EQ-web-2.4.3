@@ -195,7 +195,7 @@ const PersonalVerificationForm = ({ onNext, onPrev, defaultValues }) => {
     if (uploadedFiles['kyc-photo']) formData.append('kycPhoto', uploadedFiles['kyc-photo']);
 
     try {
-      const response = await fetch(`http://localhost:5001/api/register/verification/${startupId}`, {
+      const response = await fetch(buildApiUrl(API_CONFIG.ENDPOINTS.VERIFICATION) + `/${startupId}`, {
         method: 'PUT',
         body: formData,
       });

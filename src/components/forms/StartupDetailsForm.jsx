@@ -139,7 +139,7 @@ const StartupDetailsForm = ({ onNext, onPrev, defaultValues }) => {
     }
     
     try {
-      const response = await fetch(`http://localhost:5001/api/register/startup-details/${startupId}`, {
+      const response = await fetch(buildApiUrl(API_CONFIG.ENDPOINTS.STARTUP_DETAILS) + `/${startupId}`, {
         method: 'PUT',
         body: formData,
       });

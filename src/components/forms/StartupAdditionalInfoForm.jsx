@@ -176,7 +176,7 @@ const StartupAdditionalInfoForm = ({ onNext, onPrev, defaultValues }) => {
     
     // Try to connect to backend
     try {
-      const response = await fetch(`http://localhost:5001/api/register/additional-info/${startupId}`, {
+      const response = await fetch(buildApiUrl(API_CONFIG.ENDPOINTS.ADDITIONAL_INFO) + `/${startupId}`, {
         method: 'PUT',
         body: formData,
       });

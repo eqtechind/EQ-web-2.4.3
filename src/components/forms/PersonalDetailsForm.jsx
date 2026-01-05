@@ -43,7 +43,7 @@ const PersonalDetailsForm = ({ onNext, defaultValues }) => {
 
     // 2. Send the restructured data to the backend API
     try {
-      const response = await fetch('http://localhost:5001/api/register', {
+      const response = await fetch(buildApiUrl(API_CONFIG.ENDPOINTS.REGISTER), {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
