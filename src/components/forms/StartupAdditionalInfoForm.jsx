@@ -100,6 +100,9 @@ const StartupAdditionalInfoForm = ({ onNext, onPrev, defaultValues }) => {
   // Get environment configuration
   const envConfig = getEnvironmentConfig();
 
+  console.log('process.env.NEXT_PUBLIC_SKIP_API:', process.env.NEXT_PUBLIC_SKIP_API);
+  console.log('envConfig:', envConfig);
+
   // Enhanced submission logic with better error handling
   const onSubmit = async (data) => {
     console.log('Form submitted with data:', data);
@@ -140,6 +143,8 @@ const StartupAdditionalInfoForm = ({ onNext, onPrev, defaultValues }) => {
 
     // Create FormData using the helper function
     const formData = createFormData(data, uploadedFiles);
+    
+    console.log('skipAPI:', skipAPI, 'API_CONFIG.SKIP_API:', API_CONFIG.SKIP_API);
     
     // Validate files before submission
     for (const [key, file] of Object.entries(uploadedFiles)) {

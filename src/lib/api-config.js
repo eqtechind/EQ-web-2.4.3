@@ -42,8 +42,8 @@ export const API_CONFIG = {
   ALLOWED_FILE_TYPES: ['.pdf', '.png', '.jpg', '.jpeg', '.doc', '.docx', '.ppt', '.pptx', '.mp4', '.avi', '.mov', '.wmv'],
   
   // Development mode settings
-  SKIP_API: process.env.NODE_ENV === 'development' && 
-           process.env.NEXT_PUBLIC_SKIP_API === 'true',
+  SKIP_API: true, // process.env.NODE_ENV === 'development' && 
+           // process.env.NEXT_PUBLIC_SKIP_API === 'true',
 };
 
 // API Response status codes
