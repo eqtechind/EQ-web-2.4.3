@@ -23,7 +23,85 @@ Steps:
             npm start
 
 Repository skull:
-    EQ-WEB-2.y.z
-    —→ public
-       —→ $ has all the images stored
+
+EQ-WEB-2.y.z
+
+—→ public
+    —→ $ has all the images stored
+
+—→ src
+
+    —→ app
+        —→ (authentication)
+            —→ _components
+                —→ $ Reset Password page
+            —→ forgetpassword
+                —→ $ page
+            —→ investor-login
+                —→ $ page
+            —→ investor-signup
+                —→ $ page
+            —→ startup-login
+                —→ $ page
+            —→ startup-signup
+                —→ $ page
+        —→ (eqfund)
+            —→ _components
+                —→ $ header page
+                —→ $ notification page
+                —→ $ notification card page
+            —→ eqfund
+                —→ home
+                    —→ $ page
+                —→ invest
+                    —→ $ page
+                —→ message
+                    —→ $ page
+                —→ portfolio
+                    —→ $ page
+            —→ $ layout page
+        —→ (payment)
+             —→ $ payment button page           
+        —→ api
+            —→ $ api routes ??
+        —→ fonts ^^
+            —→ $ website fonts
+        —→ process-investor
+            —→ aadhar_verification-investor
+            —→ bankdetails-investor
+            —→ digilocker-investor
+                —→ _components
+            —→ document-investor
+                —→ _components
+            —→ face-verification-investor
+            —→ panprocess-investor
+            —→ personal_information-investor
+        —→ process-startup
+            —→ aadhar_verification-startup
+            —→ bankdetails-startup
+            —→ digilocker-startup
+                —→ _components
+            —→ document-startup
+                —→ _components
+            —→ face-verification-startup
+            —→ panprocess-investor
+            —→ personal_information-startup
+        —→ startup
+            —→ 
+            —→ 
+            —→ 
+        —→ v2
+
+    —→ components
+    —→ firebase
+    —→ hooks
+    —→ lib
+
+
+
+
+
+
+
+
 
