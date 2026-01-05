@@ -23,7 +23,6 @@ Steps:
             npm start
 
 Repository skull:
-
 EQ-WEB-2.y.z
 
 —→ public
@@ -68,34 +67,132 @@ EQ-WEB-2.y.z
             —→ $ website fonts
         —→ process-investor
             —→ aadhar_verification-investor
+                —→ $ page
             —→ bankdetails-investor
+                —→ $ page
             —→ digilocker-investor
                 —→ _components
+                    —→ $ digilocker accept and success pages
+                —→ $ page
             —→ document-investor
                 —→ _components
+                    —→ $ payment button page
+                —→ $ page
             —→ face-verification-investor
+                —→ $ page
             —→ panprocess-investor
+                —→ $ page
             —→ personal_information-investor
+                —→ $ page
         —→ process-startup
             —→ aadhar_verification-startup
+                —→ $ page
             —→ bankdetails-startup
+                —→ $ page
             —→ digilocker-startup
                 —→ _components
+                    —→ $ digilocker accept and success page
+                —→ $ page
             —→ document-startup
                 —→ _components
+                    —→ $ payment button page
             —→ face-verification-startup
+                —→ $ page
             —→ panprocess-investor
+                —→ $ page
             —→ personal_information-startup
+                —→ $ page
         —→ startup
-            —→ 
-            —→ 
-            —→ 
+            —→ documents
+                —→ $ page
+            —→ personaldetails
+                —→ $ page
+            —→ team-member
+                —→ $ page
+            —→ venture-details
+                —→ $ page
         —→ v2
+            —→ _components
+                —→ home                                                             main home page
+                    —→ $ FAQ, Footer, HeroSection (video), stat pages
+                —→ $ footer and navbar pages
+            —→ about
+                —→ $ page and css
+            —→ contact
+                —→ $ page and css
+            —→ eqfund
+                —→ _components
+                    —→ $ navbar page
+                —→ messages
+                    —→ _components
+                        —→ $ chat interface and messaging stuff pages
+                    —→ $ page
+                —→ portfolio
+                    —→ $ page 
+                —→ $ page and css
+            —→ Eqrate
+                —→ form
+                    —→ $ page 
+                —→ $ page and css
+            —→ messages
+                —→ _components
+                    —→ $ chat interface and messaging stuff pages
+                —→ $ page
+            —→ postregister
+                —→ $ page 
+            —→ service
+                —→ _components
+                    —→ $ footer and navbar pages
+                —→ styles
+                    —→ $ css pages
+                —→ $ page
+            —→ startup
+                —→ customercare
+                    —→ $ page
+                —→ dashboard
+                    —→ $ page
+                —→ eqfund
+                    —→ _components 
+                        —→ $ navbar page
+                    —→ $ page and css
+                —→ history
+                    —→ $ page
+                —→ login
+                    —→ $ page
+                —→ profile
+                    —→ _components
+                        —→ $ navbar
+                    —→ $ page
+                —→ register
+                    —→ $ page
+            —→ startup_customer_care
+                —→ $ page and css
+            —→ StartupEqfund
+                —→ $ page and css
+            —→ styles **
+                —→ $ FAQ, herosection, navbar and stat css
+            —→ $ page
 
     —→ components
+        —→ forms
+            —→ $ personal details page
+            —→ $ personal verification page
+            —→ $ startup additional information page
+            —→ $ startup details form
+            —→ $ startup documents forms
+        —→ ui **
+            —→ $ multiple pages 
+        —→ $ startup registration page
+        —→ $ step component page
+
     —→ firebase
+        —→ $ investor and startup js files
+
     —→ hooks
+        —→ $ use mobile and use toast hooks
+
     —→ lib
+        —→ $ api configuration and util files
 
 
 
