@@ -21,3 +21,9 @@ Steps:
             npm i
             npm run build
             npm start
+
+Repository skull:
+    EQ-WEB-2.y.z
+    —→ public
+       —→ $ has all the images stored
+
