@@ -134,7 +134,7 @@ EQ-WEB-2.y.z
                 —→ form
                     —→ $ page 
                 —→ $ page and css
-            —→ messages
+            —→ messages                                                              code can be reused
                 —→ _components
                     —→ $ chat interface and messaging stuff pages
                 —→ $ page
